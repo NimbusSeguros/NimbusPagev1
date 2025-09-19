@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+:root {
+  /* Colores */
+  --nimbus-blue: #0000FF;
+  --nimbus-green: #72FF47;
+  --nimbus-gray-light: #F2F2F2;
+  --nimbus-gray-dark: #5E5E5E;
+  --nimbus-white: #FFFFFF;
+
+  /* Tipografía */
+  --font-family-nimbus: 'Open Sans', sans-serif;
+  
+  /* Tamaños de fuente */
+  --font-size-nimbus-h1: 50px;
+  --font-size-nimbus-h2: 18px;
+  --font-size-nimbus-body: 12px;
+  
+  /* Pesos de fuente */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
