@@ -34,20 +34,20 @@ const testimonialsData: Testimonial[][] = [
   [
     {
       id: 4,
-      name: "María González",
-      matricula: "Matr. 78432",
+      name: "Elvio Scholles",
+      matricula: "Matr. 85259",
       text: "La experiencia con Nimbus ha sido excepcional. Su equipo siempre está disponible para resolver cualquier duda y brindar el mejor servicio.",
     },
     {
       id: 5,
-      name: "Carlos Mendez",
-      matricula: "Matr. 54321",
+      name: "Carina Perdomo",
+      matricula: "Matr. 104336",
       text: "Recomiendo ampliamente a Nimbus. Su profesionalismo y dedicación son incomparables. Han sido fundamentales en mi desarrollo profesional.",
     },
     {
       id: 6,
-      name: "Ana Rodríguez",
-      matricula: "Matr. 87654",
+      name: "Marcos Ruiz",
+      matricula: "Matr. 87736",
       text: "Nimbus no solo ofrece servicios de calidad, sino que también se preocupa genuinamente por el bienestar y crecimiento de sus clientes.",
     },
   ],

@@ -18,11 +18,11 @@ export default function HistorySection() {
           </p>
 
           <p>
-            Desde nuestros inicios hasta hoy, evolucionamos en equipo: formamos una comunidad sólida, diversa y comprometida con la excelencia.Conocemos el mercado, todas sus ramas y trabajamos día a día para simplificar la gestión y multiplicar las oportunidades.
+            Desde nuestros inicios hasta hoy, evolucionamos en equipo: formamos una comunidad sólida, diversa y comprometida con la excelencia. Conocemos el mercado, todas sus ramas y trabajamos día a día para simplificar la gestión y multiplicar las oportunidades.
           </p>
 
           <p>
-           Hoy, más que una fusión, somos una identidad propia: una organización flexible, cercana y con visión a largo plazo
+           Hoy, más que una fusión, somos una identidad propia: una organización flexible, cercana y con visión a largo plazo.
           </p>
         </div>
       </div>
