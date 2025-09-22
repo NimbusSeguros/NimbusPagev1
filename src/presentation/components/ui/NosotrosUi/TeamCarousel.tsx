@@ -98,7 +98,7 @@ export default function TeamCarousel() {
             en nosotros.
           </p>
           <p className="text-[#5E5E5E] font-['Open_Sans',sans-serif]">
-            Conocé al equipo que impulsa esta red todos
+            Conocé al equipo que impulsa esta red todos los días.
           </p>
         </div>
 
