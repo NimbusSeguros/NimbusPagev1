@@ -1,4 +1,6 @@
-import { Link } from 'react-router-dom';
+"use client"
+
+import { Link } from "react-router-dom"
 import type React from "react"
 import { useState, useEffect } from "react"
 
@@ -12,10 +14,6 @@ interface CarouselItem {
 const HeaderCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
-  
-
-
-
 
   useEffect(() => {
     const checkIsMobile = () => {
@@ -33,8 +31,16 @@ const HeaderCarousel: React.FC = () => {
       reverseOrder: true,
       description: (
         <>
-         Conectamos a profesionales del seguro con oportunidades reales de expansión. 
-         <strong> Vos ponés la experiencia. Nosotros, el impulso y las herramientas. </strong>{" "}
+          {isMobile ? (
+            <>
+              Conectamos a los mejores productores con oportunidades reales de expansión.
+            </>
+          ) : (
+            <>
+              Conectamos a profesionales del seguro con oportunidades reales de expansión.
+              <strong> Vos ponés la experiencia. Nosotros, el impulso y las herramientas. </strong>{" "}
+            </>
+          )}
         </>
       ),
     },
@@ -43,8 +49,13 @@ const HeaderCarousel: React.FC = () => {
       titleHighlight: "empieza acá",
       description: (
         <>
-          Somos el punto de partida para que desarrolles tu carrera como PAS.<br/>{" "}
-          <strong>Te damos el acompañamiento, herramientas y oportunidades que necesitás para crecer en todo el país.</strong>
+          {isMobile ? (
+            <>Te acompañamos desde el primer paso, con visión y respaldo.</>
+          ) : (
+            <>
+              Te acompañamos desde el primer paso, con visión y respaldo.
+            </>
+          )}
         </>
       ),
     },
@@ -53,11 +64,18 @@ const HeaderCarousel: React.FC = () => {
       titleHighlight: "crecimiento",
       description: (
         <>
-          Accedé a <strong>aseguradoras líderes, capacitaciones de primer nivel</strong> y una red activa que te abre puertas para <strong>potenciar tu cartera.</strong>
+          {isMobile ? (
+            <>Accedé a aseguradoras, capacitaciones y una red activa que potencia tu cartera.</>
+          ) : (
+            <>
+              Accedé a <strong>aseguradoras líderes, capacitaciones de primer nivel</strong> y una red activa que te
+              abre puertas para <strong>potenciar tu cartera.</strong>
+            </>
+          )}
         </>
-      ),
-    },
-  ]
+      ),
+    },
+  ]
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -69,7 +87,6 @@ const HeaderCarousel: React.FC = () => {
   const handleDotClick = (index: number) => {
     setCurrentIndex(index)
   }
-
 
   const renderTitle = (item: CarouselItem) => {
     if (item.reverseOrder) {
@@ -145,11 +162,9 @@ const HeaderCarousel: React.FC = () => {
           {/* Botón actualizado - ahora solo usa onClick */}
           <div className="inline-block mb-8 sm:mb-12">
             <Link to="/sumate#formulario">
-            <button
-              className="bg-[#72FF47] hover:bg-[#0000FF] text-[#0000FF] hover:text-white font-medium py-3 px-6 sm:py-4 sm:px-10 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl text-[12px] cursor-pointer"
-            >
-              Quiero ser parte
-            </button>
+              <button className="bg-[#72FF47] hover:bg-[#0000FF] text-[#0000FF] hover:text-white font-medium py-3 px-6 sm:py-4 sm:px-10 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl text-[12px] cursor-pointer">
+                Quiero ser parte
+              </button>
             </Link>
           </div>
 
@@ -158,7 +173,7 @@ const HeaderCarousel: React.FC = () => {
               <button
                 key={index}
                 onClick={() => handleDotClick(index)}
-                className={`w-1 h-1 sm:w-3 sm:h-3 rounded-full cursor-pointer ${
+                className={`w-3 h-3 sm:w-3 sm:h-3 rounded-full cursor-pointer ${
                   currentIndex === index ? "bg-[#0000FF] w-2 sm:w-6" : "bg-[#0000FF] opacity-50"
                 } transition-all duration-300`}
                 aria-label={`Slide ${index + 1}`}
